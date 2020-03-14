@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import EatThis
+//@testable import EatThis
 
 class EatThisTests: XCTestCase {
 
