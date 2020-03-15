@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  LoginView.swift
 //  EatThis
 //
 //  Created by 김선우 on 3/1/20.
@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct LoginView: View {
     
     @ObservedObject var user: User = User()
     
@@ -20,7 +20,7 @@ struct ContentView: View {
                 Spacer()
             }.frame(height: 234).background(Color.orange2)
   
-            LoginView().environmentObject(user)
+            LoginInputView().environmentObject(user)
                 .padding([.leading, .trailing], 20.0)
                 .padding(.top, -50)
                 .shadow(color: .overlay1, radius: 5, x: 0, y: 2)
@@ -59,7 +59,7 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        LoginView()
     }
 }
 
@@ -72,7 +72,7 @@ class User: ObservableObject {
         @State var password: String = ""
 }
 
-struct LoginView: View {
+struct LoginInputView: View {
     
     @EnvironmentObject var user: User
     
