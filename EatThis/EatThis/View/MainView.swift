@@ -14,25 +14,9 @@ struct MainView: View {
     }
     
     var body: some View {
-        List {
-            StoreCell(imageHeight: 205)
-            
-            //            StoreCell()
-            //            StoreCell()
-            //            StoreCell()
-            //            StoreCell()
-            //            StoreCell()
-            //            StoreCell()
-            //            StoreCell()
-            //            StoreCell()
-            //            StoreCell()
+        List((1...10), id: \.self) { _ in
+        StoreCell(imageHeight: 205)
         }
-    }
-}
-
-struct MainView_Previews: PreviewProvider {
-    static var previews: some View {
-        MainView()
     }
 }
 
@@ -70,7 +54,7 @@ struct StoreCell: View {
                     Spacer()
                 }
 
-                LineView(color: .light3)
+                LineView(color: .light4)
 
 
                 HStack() {
@@ -89,7 +73,7 @@ struct StoreCell: View {
         }
         .cornerRadius(20)
         .overlay( RoundedRectangle(cornerRadius: 20)
-        .stroke(Color.light3, lineWidth: 1)
+        .stroke(Color.light4, lineWidth: 1)
         )
     }
 }
@@ -116,3 +100,45 @@ struct LineView: View {
     }
 }
 
+
+struct MenuRow: View {
+    var body: some View {
+        HStack(alignment: .top ,spacing: 14) {
+            Image("food2")
+                .resizable()
+                .frame(width: 90, height: 90)
+                .cornerRadius(20)
+            VStack(alignment: .leading) {
+                HStack {
+                    Text("떡볶이 1인 세트")
+                        .font(.regular1).foregroundColor(.dark1)
+                    
+                    Spacer()
+                    
+                    Text("7,000원")
+                        .font(.small3).foregroundColor(.orange1)
+                }
+                Spacer()
+                Text("떡볶이 1인분 + 튀김(오징어 1개, 고구마 2개, 김말이…")
+                    .font(.small3).foregroundColor(.dark3)
+            }
+                
+            .padding(.bottom, 12)
+            
+        }.frame(height: 107)
+            .padding([.leading, .trailing], 16)
+            .padding(.top, 20)
+            
+    }
+}
+ 
+struct MainView_Previews: PreviewProvider {
+    static var previews: some View {
+        Group {
+            StoreCell(imageHeight: 205).previewLayout(.sizeThatFits)
+            MenuRow().background(Color.orange2.opacity(0.1)).previewLayout(.sizeThatFits)
+            
+            MenuRow().previewLayout(.sizeThatFits)
+        }
+    }
+}
