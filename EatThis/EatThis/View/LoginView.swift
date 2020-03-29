@@ -128,7 +128,6 @@ struct SocialLoginView: View {
             
         }.padding()
     }
-    
 }
 
 struct SocialLoginCell: View {
