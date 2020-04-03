@@ -75,6 +75,32 @@ struct MainView: View {
                     }.padding(.leading, 27)
                 }
                 
+                HStack {
+                    Spacer()
+                    Text("구글광고").foregroundColor(.black).font(.regular7)
+                    Spacer()
+                }
+                .frame(height: 60)
+                .background(Color.dark3)
+                .padding([.leading, .trailing], 16)
+                .padding(.top, 44)
+                
+                HStack {
+                    Text("방금 업데이트 된 매장이에요").padding(.leading, 16).font(.regular1).foregroundColor(.dark1)
+                    Spacer()
+                    Image("icoArrowNextGr").padding(.trailing, 16)
+                }
+                .padding(.top, 29.0)
+                
+                ScrollView(.horizontal) {
+                    HStack(spacing: 20) {
+                        ForEach((1...10), id: \.self) { _ in
+                            StoreCell(imageHeight: 102).frame(width: 150, height: 203)
+                        }
+                        
+                    }.padding(.leading, 27).padding(.top, 14)
+                }
+                
             }.background(Color.light1)
                 .cornerRadius(20)
                 .overlay( RoundedRectangle(cornerRadius: 20).stroke(Color.light4, lineWidth: 1) )
