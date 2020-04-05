@@ -11,6 +11,7 @@
 		376C505DC4B2069D77BCC45E /* Pods_EatThisTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEA8F63492948144FD88460C /* Pods_EatThisTests.framework */; };
 		5303C9A02412B0FF0040CC38 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5303C99F2412B0FF0040CC38 /* NotificationView.swift */; };
 		5303C9A32412B2100040CC38 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5303C9A22412B2100040CC38 /* MainView.swift */; };
+		530591F6243A016300CC929C /* Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530591F5243A016300CC929C /* Component.swift */; };
 		538B2018240BD0D7005ED557 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538B2017240BD0D7005ED557 /* AppDelegate.swift */; };
 		538B201A240BD0D7005ED557 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538B2019240BD0D7005ED557 /* SceneDelegate.swift */; };
 		538B201D240BD0D7005ED557 /* EatThis.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 538B201B240BD0D7005ED557 /* EatThis.xcdatamodeld */; };
@@ -22,6 +23,7 @@
 		538B203D240BD0DA005ED557 /* EatThisUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538B203C240BD0DA005ED557 /* EatThisUITests.swift */; };
 		538B204B240C1373005ED557 /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538B204A240C1373005ED557 /* Color+.swift */; };
 		538B204E240C138A005ED557 /* Font+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538B204D240C138A005ED557 /* Font+.swift */; };
+		539DDFF92439FABD00A10949 /* HomeMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539DDFF82439FABD00A10949 /* HomeMainView.swift */; };
 		53A43160241CEFDF002CA103 /* TempFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A4315F241CEFDF002CA103 /* TempFont.swift */; };
 		B25E545A3219925BF88487C6 /* Pods_EatThis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3973BB0719DDDFB5FC5C38AE /* Pods_EatThis.framework */; };
 /* End PBXBuildFile section */
@@ -48,6 +50,7 @@
 		3973BB0719DDDFB5FC5C38AE /* Pods_EatThis.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EatThis.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5303C99F2412B0FF0040CC38 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
 		5303C9A22412B2100040CC38 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		530591F5243A016300CC929C /* Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Component.swift; sourceTree = "<group>"; };
 		538B2014240BD0D7005ED557 /* EatThis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EatThis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		538B2017240BD0D7005ED557 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		538B2019240BD0D7005ED557 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +68,7 @@
 		538B203E240BD0DA005ED557 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		538B204A240C1373005ED557 /* Color+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+.swift"; sourceTree = "<group>"; };
 		538B204D240C138A005ED557 /* Font+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+.swift"; sourceTree = "<group>"; };
+		539DDFF82439FABD00A10949 /* HomeMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMainView.swift; sourceTree = "<group>"; };
 		53A4315F241CEFDF002CA103 /* TempFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempFont.swift; sourceTree = "<group>"; };
 		6ECB1EC04BAC402FCFB56B67 /* Pods-EatThisUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EatThisUITests.release.xcconfig"; path = "Target Support Files/Pods-EatThisUITests/Pods-EatThisUITests.release.xcconfig"; sourceTree = "<group>"; };
 		751073447C7032F8B4AC40C7 /* Pods-EatThisTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EatThisTests.release.xcconfig"; path = "Target Support Files/Pods-EatThisTests/Pods-EatThisTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -129,11 +133,25 @@
 		5303C99E2412B0A10040CC38 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				538B201E240BD0D7005ED557 /* LoginView.swift */,
+				530591F4243A014300CC929C /* Component */,
+				539DDFFB2439FB1400A10949 /* Setting */,
+				539DDFFA2439FB0800A10949 /* Review */,
+				539DDFF72439FA6B00A10949 /* MyPage */,
+				539DDFF62439FA6400A10949 /* Favorite */,
+				539DDFF52439FA5B00A10949 /* Login */,
+				539DDFF42439FA4A00A10949 /* Home */,
 				5303C99F2412B0FF0040CC38 /* NotificationView.swift */,
 				5303C9A22412B2100040CC38 /* MainView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		530591F4243A014300CC929C /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				530591F5243A016300CC929C /* Component.swift */,
+			);
+			path = Component;
 			sourceTree = "<group>";
 		};
 		538B200B240BD0D7005ED557 = {
@@ -224,6 +242,50 @@
 			children = (
 			);
 			path = Font;
+			sourceTree = "<group>";
+		};
+		539DDFF42439FA4A00A10949 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				539DDFF82439FABD00A10949 /* HomeMainView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		539DDFF52439FA5B00A10949 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				538B201E240BD0D7005ED557 /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		539DDFF62439FA6400A10949 /* Favorite */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Favorite;
+			sourceTree = "<group>";
+		};
+		539DDFF72439FA6B00A10949 /* MyPage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MyPage;
+			sourceTree = "<group>";
+		};
+		539DDFFA2439FB0800A10949 /* Review */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Review;
+			sourceTree = "<group>";
+		};
+		539DDFFB2439FB1400A10949 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Setting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -433,10 +495,12 @@
 				5303C9A32412B2100040CC38 /* MainView.swift in Sources */,
 				538B201D240BD0D7005ED557 /* EatThis.xcdatamodeld in Sources */,
 				53A43160241CEFDF002CA103 /* TempFont.swift in Sources */,
+				530591F6243A016300CC929C /* Component.swift in Sources */,
 				5303C9A02412B0FF0040CC38 /* NotificationView.swift in Sources */,
 				538B204B240C1373005ED557 /* Color+.swift in Sources */,
 				538B2018240BD0D7005ED557 /* AppDelegate.swift in Sources */,
 				538B201F240BD0D7005ED557 /* LoginView.swift in Sources */,
+				539DDFF92439FABD00A10949 /* HomeMainView.swift in Sources */,
 				538B201A240BD0D7005ED557 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -534,7 +598,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -588,7 +652,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -616,6 +680,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = 13.0;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
 			};
 			name = Debug;
 		};
@@ -637,6 +703,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = 13.0;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
 			};
 			name = Release;
 		};
