@@ -12,6 +12,10 @@
 		5303C9A02412B0FF0040CC38 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5303C99F2412B0FF0040CC38 /* NotificationView.swift */; };
 		5303C9A32412B2100040CC38 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5303C9A22412B2100040CC38 /* MainView.swift */; };
 		530591F6243A016300CC929C /* Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530591F5243A016300CC929C /* Component.swift */; };
+		530591FA243A102100CC929C /* FavoriteMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530591F9243A102100CC929C /* FavoriteMainView.swift */; };
+		530591FC243A102B00CC929C /* MyPageMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530591FB243A102B00CC929C /* MyPageMainView.swift */; };
+		530591FE243A103500CC929C /* ReviewMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530591FD243A103500CC929C /* ReviewMainView.swift */; };
+		53059200243A104200CC929C /* SettingMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530591FF243A104200CC929C /* SettingMainView.swift */; };
 		538B2018240BD0D7005ED557 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538B2017240BD0D7005ED557 /* AppDelegate.swift */; };
 		538B201A240BD0D7005ED557 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538B2019240BD0D7005ED557 /* SceneDelegate.swift */; };
 		538B201D240BD0D7005ED557 /* EatThis.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 538B201B240BD0D7005ED557 /* EatThis.xcdatamodeld */; };
@@ -51,6 +55,10 @@
 		5303C99F2412B0FF0040CC38 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
 		5303C9A22412B2100040CC38 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		530591F5243A016300CC929C /* Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Component.swift; sourceTree = "<group>"; };
+		530591F9243A102100CC929C /* FavoriteMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteMainView.swift; sourceTree = "<group>"; };
+		530591FB243A102B00CC929C /* MyPageMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageMainView.swift; sourceTree = "<group>"; };
+		530591FD243A103500CC929C /* ReviewMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewMainView.swift; sourceTree = "<group>"; };
+		530591FF243A104200CC929C /* SettingMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingMainView.swift; sourceTree = "<group>"; };
 		538B2014240BD0D7005ED557 /* EatThis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EatThis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		538B2017240BD0D7005ED557 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		538B2019240BD0D7005ED557 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -263,6 +271,7 @@
 		539DDFF62439FA6400A10949 /* Favorite */ = {
 			isa = PBXGroup;
 			children = (
+				530591F9243A102100CC929C /* FavoriteMainView.swift */,
 			);
 			path = Favorite;
 			sourceTree = "<group>";
@@ -270,6 +279,7 @@
 		539DDFF72439FA6B00A10949 /* MyPage */ = {
 			isa = PBXGroup;
 			children = (
+				530591FB243A102B00CC929C /* MyPageMainView.swift */,
 			);
 			path = MyPage;
 			sourceTree = "<group>";
@@ -277,6 +287,7 @@
 		539DDFFA2439FB0800A10949 /* Review */ = {
 			isa = PBXGroup;
 			children = (
+				530591FD243A103500CC929C /* ReviewMainView.swift */,
 			);
 			path = Review;
 			sourceTree = "<group>";
@@ -284,6 +295,7 @@
 		539DDFFB2439FB1400A10949 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
+				530591FF243A104200CC929C /* SettingMainView.swift */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -492,13 +504,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				538B204E240C138A005ED557 /* Font+.swift in Sources */,
+				530591FA243A102100CC929C /* FavoriteMainView.swift in Sources */,
 				5303C9A32412B2100040CC38 /* MainView.swift in Sources */,
+				530591FE243A103500CC929C /* ReviewMainView.swift in Sources */,
 				538B201D240BD0D7005ED557 /* EatThis.xcdatamodeld in Sources */,
 				53A43160241CEFDF002CA103 /* TempFont.swift in Sources */,
 				530591F6243A016300CC929C /* Component.swift in Sources */,
 				5303C9A02412B0FF0040CC38 /* NotificationView.swift in Sources */,
 				538B204B240C1373005ED557 /* Color+.swift in Sources */,
+				53059200243A104200CC929C /* SettingMainView.swift in Sources */,
 				538B2018240BD0D7005ED557 /* AppDelegate.swift in Sources */,
+				530591FC243A102B00CC929C /* MyPageMainView.swift in Sources */,
 				538B201F240BD0D7005ED557 /* LoginView.swift in Sources */,
 				539DDFF92439FABD00A10949 /* HomeMainView.swift in Sources */,
 				538B201A240BD0D7005ED557 /* SceneDelegate.swift in Sources */,

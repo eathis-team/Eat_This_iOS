@@ -23,16 +23,16 @@ struct MainView: View {
             ScrollView(.vertical) { HomeMainView() }.padding([.all], 0)
                 .tabItem { TabViewItem(type: .home) }
             
-            LoginView()
+            FavoriteMainView()
                 .tabItem { TabViewItem(type: .favorite) }
             
-            NotificationView()
+            ReviewMainView()
                 .tabItem { TabViewItem(type: .review) }
             
-            NotificationView()
+            LoginView()
                 .tabItem { TabViewItem(type: .search) }
             
-            NotificationView()
+            SettingMainView()
                 .tabItem { TabViewItem(type: .myPage) }
         }.accentColor(.orange)
     }
@@ -77,10 +77,9 @@ struct TabViewItem: View {
 }
 
 
+
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
-        Group {
-            MainView().previewLayout(.device)
-        }
+        MainView()
     }
 }
